@@ -1,0 +1,20 @@
+# ChuckJokesVue
+
+## Description
+This project is an assignment designed to practice the fundamentals of the JavaScript Vue framework. It demonstrates how to initialize a new Vue instance, store a predefined array of objects in the data function, and render them to the DOM using Vue's declarative rendering. 
+
+## Features
+* **Vue 3 Instance:** Implements `createApp` to manage the application state.
+* **List Rendering:** Utilizes the `v-for` directive to iterate through an array of objects and display each item dynamically.
+* **Aesthetic UI:** Includes custom CSS to ensure the data is presented in a clean, minimalist, and visually pleasing list format.
+
+## Technologies Used
+* HTML5
+* CSS3
+* Vue.js (v3)
+
+## Setup Instructions
+To run this project locally:
+1. Clone this repository.
+2. Place the project folder into your local server environment (e.g., `htdocs` for XAMPP or `www` for WAMP/Laragon).
+3. Open a web browser and navigate to `http://localhost/ChuckJokesVue/` (adjust the URL depending on your specific local server configuration).
