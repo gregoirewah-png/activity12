@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chuck Norris Jokes - Vue</title>
+    <title>Task 10 - Chuck Norris Vue Components</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
-<body>
+<body class="bg-light py-5">
 
-    <div id="app" class="app-container">
-        <h1>Chuck Norris Facts</h1>
-        <ul>
-            <li v-for="(joke, index) in chuck" :key="index">
-                {{ joke.value }}
-            </li>
-        </ul>
+    <div id="app" class="container">
+        <h1 class="text-center mb-5 fw-bold text-uppercase" style="color: #d35400;">Chuck Norris Facts</h1>
+        
+        <div class="row g-4">
+            <div class="col-12 col-md-4" v-for="(joke, index) in chuck" :key="index">
+                <chuck-card :icon_url="joke.icon_url" :value="joke.value"></chuck-card>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
